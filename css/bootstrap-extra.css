@@ -1,0 +1,360 @@
+/*!
+ * Bootstrap extra components
+ * by J.S. Negley
+ * version: 2015-11-19
+ */
+ 
+/* === column collapse ====== */
+.col-collapse{ padding-right:0; padding-left:0; }
+.col-collapse-right{ padding-right:0; }
+.col-collapse-left{ padding-left:0; }
+@media ((min-width: 768px) and (max-width: 991px)) {
+  .col-collapse-sm{ padding-right:0; padding-left:0; }
+  .col-collapse-sm-right{ padding-right:0; }
+  .col-collapse-sm-left{ padding-left:0; }
+}
+@media ((min-width: 992px) and (max-width: 1999px)) {
+  .col-collapse-md{ padding-right:0; padding-left:0; }
+    .col-collapse-md-right{ padding-right:0; }
+    .col-collapse-md-left{ padding-left:0; }
+}
+@media (min-width: 1200px) {
+  .col-collapse-lg{ padding-right:0; padding-left:0; }
+  .col-collapse-lg-right{ padding-right:0; }
+  .col-collapse-lg-left{ padding-left:0; }
+}
+
+
+/* === block-grid =======================
+ * Based on ZURB Foundation. Thanks guys.
+ * version 160130
+ * http://codepen.io/jstneg/pen/LEoVdK
+ */
+.block-grid ul{ 
+  margin-left:-15px !important; 
+  margin-right:-15px !important; 
+  padding:0 !important;
+}
+.block-grid ul li{ 
+  margin:0 !important; 
+}
+/*.block-grid ul ul{ 
+  margin-left: 0; 
+  margin-right: 0; 
+  padding:0;
+}
+.block-grid ul li ul li{ 
+  margin:0 ; 
+}*/
+[class*="block-grid-"] {
+  display: block;
+  padding: 0;
+  margin: 0 -15px;
+  *zoom: 1;
+}
+  [class*="block-grid-"]:before, [class*="block-grid-"]:after {
+    content: " ";
+    display: table;
+  }
+  [class*="block-grid-"]:after {
+    clear: both;
+  }
+  [class*="block-grid-"] > li {
+    display: block;
+    height: auto;
+    width: 100%;
+    float: left;
+    padding: 0 15px 15px;
+  }
+
+@media (min-width: 768px) {
+  .block-grid-sm-1up > li {
+    width: 100%;
+    list-style: none; }
+    .block-grid-sm-1up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-sm-1up > li:nth-of-type(1n+1) {
+      clear: both; }
+
+  .block-grid-sm-2up > li {
+    width: 50%;
+    list-style: none; }
+    .block-grid-sm-2up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-sm-2up > li:nth-of-type(2n+1) {
+      clear: both; }
+
+  .block-grid-sm-3up > li {
+    width: 33.33333%;
+    list-style: none; }
+    .block-grid-sm-3up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-sm-3up > li:nth-of-type(3n+1) {
+      clear: both; }
+
+  .block-grid-sm-4up > li {
+    width: 25%;
+    list-style: none; }
+    .block-grid-sm-4up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-sm-4up > li:nth-of-type(4n+1) {
+      clear: both; }
+
+  .block-grid-sm-5up > li {
+    width: 20%;
+    list-style: none; }
+    .block-grid-sm-5up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-sm-5up > li:nth-of-type(5n+1) {
+      clear: both; }
+
+  .block-grid-sm-6up > li {
+    width: 16.66667%;
+    list-style: none; }
+    .block-grid-sm-6up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-sm-6up > li:nth-of-type(6n+1) {
+      clear: both; }
+}
+@media (min-width: 992px) {
+  .block-grid-md-1up > li {
+    width: 100%;
+    list-style: none; }
+    .block-grid-md-1up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-md-1up > li:nth-of-type(1n+1) {
+      clear: both; }
+
+  .block-grid-md-2up > li {
+    width: 50%;
+    list-style: none; }
+    .block-grid-md-2up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-md-2up > li:nth-of-type(2n+1) {
+      clear: both; }
+
+  .block-grid-md-3up > li {
+    width: 33.33333%;
+    list-style: none; }
+    .block-grid-md-3up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-md-3up > li:nth-of-type(3n+1) {
+      clear: both; }
+
+  .block-grid-md-4up > li {
+    width: 25%;
+    list-style: none; }
+    .block-grid-md-4up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-md-4up > li:nth-of-type(4n+1) {
+      clear: both; }
+
+  .block-grid-md-5up > li {
+    width: 20%;
+    list-style: none; }
+    .block-grid-md-5up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-md-5up > li:nth-of-type(5n+1) {
+      clear: both; }
+
+  .block-grid-md-6up > li {
+    width: 16.66667%;
+    list-style: none; }
+    .block-grid-md-6up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-md-6up > li:nth-of-type(6n+1) {
+      clear: both; }
+}
+@media (min-width: 1200px) {
+  .block-grid-lg-1up > li {
+    width: 100%;
+    list-style: none; }
+    .block-grid-lg-1up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-lg-1up > li:nth-of-type(1n+1) {
+      clear: both; }
+
+  .block-grid-lg-2up > li {
+    width: 50%;
+    list-style: none; }
+    .block-grid-lg-2up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-lg-2up > li:nth-of-type(2n+1) {
+      clear: both; }
+
+  .block-grid-lg-3up > li {
+    width: 33.33333%;
+    list-style: none; }
+    .block-grid-lg-3up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-lg-3up > li:nth-of-type(3n+1) {
+      clear: both; }
+
+  .block-grid-lg-4up > li {
+    width: 25%;
+    list-style: none; }
+    .block-grid-lg-4up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-lg-4up > li:nth-of-type(4n+1) {
+      clear: both; }
+
+  .block-grid-lg-5up > li {
+    width: 20%;
+    list-style: none; }
+    .block-grid-lg-5up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-lg-5up > li:nth-of-type(5n+1) {
+      clear: both; }
+
+  .block-grid-lg-6up > li {
+    width: 16.66667%;
+    list-style: none; }
+    .block-grid-lg-6up > li:nth-of-type(n) {
+      clear: none; }
+    .block-grid-lg-6up > li:nth-of-type(6n+1) {
+      clear: both; }
+}
+
+
+/* === card ====== 
+ * Variation on the panel component
+ * version 151123 
+ * http://codepen.io/jstneg/pen/EVKYZj
+ */
+.card {
+  margin-bottom: 24px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: 1em;
+}
+.card-body{ 
+  overflow: auto;
+}
+.card-heading {
+  padding: 8px;
+}
+.card-footer {
+  padding: 8px;
+  border-top: 1px solid #efefef;
+}
+.card-left{ padding: 0; }
+.card-right{ padding: 0; }
+
+/* -- default ------ */
+.card-default {
+  background-color: #fff;
+  border-bottom: 1px solid #efefef;
+  font-size: 0.9em;
+  color: #666;
+}
+.card-default h4{
+  margin:0 0 16px;
+}
+.card-default p{
+  margin:0 0 8px;
+}
+.card-default > .card-heading,
+.card-default > .card-footer{
+  color: #333;
+}
+.card-default .card-left{ padding: 4px; float: left; }
+.card-default .card-right{ padding: 4px; float: left; }
+.card-default p:last-child{ margin-bottom:0; }
+
+@media (min-width: 768px) {
+  .card-default {
+    border-color: #efefef;
+  }
+
+  .card-5-7 .card-left{ width: 41.66666667%; }
+  .card-5-7 .card-right{ width: 58.33333333%; }
+  .card-6-6 .card-left{ width: 50%; }
+  .card-6-6 .card-right{ width: 50%; }
+}
+
+
+
+/* === columns 5 equal widths ====== 
+  Thanks to Fizzix, http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap/22799354#22799354
+*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths, 
+.col-lg-5ths{ position: relative; min-height: 1px; padding-right: 10px; padding-left: 10px; }
+.col-xs-5ths{ width: 20%; float: left; }
+@media (min-width: 768px) {
+    .col-sm-5ths{ width: 20%; float: left; }
+}
+@media (min-width: 992px) {
+    .col-md-5ths{ width: 20%; float: left; }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths{ width: 20%; float: left; }
+}
+/* === columns 7 equal widths ====== */
+.col-xs-7ths,
+.col-sm-7ths,
+.col-md-7ths, 
+.col-lg-7ths{ position: relative; min-height: 1px; padding-right: 10px; padding-left: 10px; }
+.col-xs-7ths{ width: 14.28571429%; float: left; }
+@media (min-width: 768px) {
+  .col-sm-7ths{ width: 14.28571429%; float: left; }
+}
+@media (min-width: 992px) {
+    .col-md-7ths{ width: 14.28571429%; float: left; }
+}
+@media (min-width: 1200px) {
+    .col-lg-7ths{ width: 14.28571429%; float: left; }
+}
+
+
+/* === glyphicons in lists === */
+.special ul li:before { /* chevron in box */   
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  float:left;
+  content: "\e080";
+  background:#660000;
+  color:#fff;
+  margin:6px 5px 0 -40px;
+  padding:6px;
+}
+
+
+/* === Minitron panel ===== */
+.minitron {
+  padding:20px;
+  margin-bottom: 30px;
+  color: #666;
+  border: 1px dotted #999;
+  background-color: #fff;
+}
+.minitron h1, .minitron .h1 {
+  margin-top: 0;
+  color: inherit;
+}
+.minitron p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.minitron p:last-child {
+  margin-bottom: 0;
+}
+.minitron a{ color:#fff; text-decoration: none; }
+.minitron a:hover{   text-decoration:underline; }
+.minitron{ border-radius:6px; }
+.minitron .glyphicon{ font-size:48px; }
+.minitron .list-group:last-child{  margin-bottom:0; }
+
+@media screen and (min-width: 768px) {
+  .minitron {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+/* === well ====== */
+.well p:last-child{ margin-bottom: 0; }

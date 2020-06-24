@@ -1,0 +1,84 @@
+/****
+ * (c) 2012 J.S. Negley LLC
+ * www.jsnegley.com
+ * template: jsN Maximus Template
+ * file: css/main.css
+ * version: 2015-06-19
+ *
+ * Page positions and base styling
+ *
+ */
+
+ /* 
+ 	== COLORS ======
+	base text: #333;
+	secondary text: #5a6e90;
+	emphasis text: #000;
+	heading text: #585858;
+
+	link: #585858;
+	link hover: #333;
+
+	lt background: #d4d8bf;
+
+ */
+ 
+html{ 
+	background: url(img/html-bkg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #d4d8bf;
+}
+
+body{ 
+	background: transparent;
+  	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#585e39+0,585e39+35&1+0,0+35 */
+/*background: -moz-linear-gradient(top,  rgba(88,94,57,1) 0%, rgba(88,94,57,0) 15%); 
+background: -webkit-linear-gradient(top,  rgba(88,94,57,1) 0%,rgba(88,94,57,0) 15%); 
+background: linear-gradient(to bottom,  rgba(88,94,57,1) 0%,rgba(88,94,57,0) 15%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585e39', endColorstr='#00585e39',GradientType=0 );*/
+
+font-family: 'Open Sans', sans-serif;
+  	color: #333;
+}
+
+/* === links ====== */
+a{ color: #585858; }
+a:hover{ color: #333; }
+
+/* === positions ====== */
+
+.header-wrap{ height: 36px; }
+
+.masthead-wrap {padding-top: 8px ; }
+.masthead-wrap .logo{ margin:40px auto 24px; }
+
+.content-wrap .container.content-wrap-in{ 
+	background: #fff;
+	-moz-box-shadow:    0 0 4px 5px #333;
+	-webkit-box-shadow: 0 0 4px 5px #333;
+    box-shadow:         0 0 4px 5px #333;
+    padding-bottom: 48px;
+}
+
+
+.component-wrap { background:rgba(255,255,255,0.4); padding-top: 24px; padding-bottom: 24px; }
+.page-homepage .component-wrap { padding:64px 0; }
+
+.spotlight-wrap{ padding-top: 32px; padding-bottom: 32px; }
+
+.position-spotlight-right{ border-top: 2px solid #f79a39; padding-top: 24px; }
+
+.footer-wrap{ margin-top:32px; margin-bottom: 24px; }
+.footer-wrap p{ color:#9aa642; }
+
+
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+	/*.position-spotlight-right{ border-left: 2px solid #f79a39; border-top: none; padding-top: 0; }*/
+}
+@media (min-width: 1200px) {
+}

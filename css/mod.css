@@ -1,0 +1,108 @@
+/****
+ * (c) 2012 J.S. Negley LLC
+ * www.jsnegley.com
+ * template: jsN Maximus Template
+ * file: css/main.css
+ * version: 2015-06-19
+ *
+ * Module chromes and indiviual styling
+ *
+ */
+
+/* === Chromes ====== */
+/* -- mod (default) ------ */
+div.mod{ margin:0; padding:0; /* do not change */}
+
+.indicates-required{ color:red; font-size:12px; float:right; }
+
+.btn-cta{
+	background-color: #f79c3b;
+    border-color: #dd8c36;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+.btn-cta:hover,
+.btn-cta:focus,
+.btn-cta.focus,
+.btn-cta:active,
+.btn-cta.active,
+.open > .dropdown-toggle.btn-cta {
+  color: #fff;
+  background-color: #fbae5e;
+  border-color: #dd8c36;
+}
+
+.btn-secondary{
+  background-color: #ccc;
+  border-color: #ddd;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 24px;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  color: #666;
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+.mod-projects{
+  background: url(img/projects-bkg.jpg) no-repeat top center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #d4d8bf;
+  padding: 82px;
+}
+.mod-projects h3{ font-size: 4em; text-align: center; color: #fff; margin-bottom: 32px; }
+.mod-projects p{  text-align: left; color: #fff; }
+@media (min-width: 768px) {
+  .mod-projects p{ font-size: 1.6em; text-align: center; }
+}
+
+.mod-portfolio{
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mod-skills{
+  background: url(img/skills-bkg.jpg) no-repeat top center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #d4d8bf;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.mod-skills h3{ font-size: 4em; text-align: center; color: #fff; margin-bottom: 32px; }
+.mod-skills h4{ font-size: 2.6em; text-align: center; color: #fff; margin-bottom: 16px; }
+.mod-skills p{ font-size: 1em; text-align: left; color: #fff; }
+.mod-skills a{ color: #fff; }
+@media (min-width: 768px) {
+  .mod-skills p{ font-size: 1.4em; text-align: center; margin-bottom: 64px;}
+
+
+}
+
+@media (min-width: 768px) {
+/* tablets and up */
+}
+@media (min-width: 992px) {
+/* medium desktop */
+}
+@media (min-width: 1200px) {
+/* large desktop */
+}
+
